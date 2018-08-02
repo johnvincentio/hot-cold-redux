@@ -1,0 +1,12 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+    - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: NPppG1ImAFuAM1RiwbruegCrovQeedUgWBxIlmO0zT3nyv3JO+lHXk9AkM+JZuyBAoR30Q5jWcGRfly6PvlWAvSBk1Pxwvx3fMU/eg63yPwjH4njB8AKQRWzockTWkjcWsSK4sCy6BI4Dg2C0ilZOm6bbC3T0hBNGf9NrThHxCz7ZNx/UAXufAgT9sttvQN0H2m+tTNb+9ZlTNa6y5hSv7fT+i1zf4E1av8P9b0A1Xkwsnufw1xQ+bADQ+4/fGQRIY0Kzb4xslza28KiVBxS5I7C76lK0Rf85WbBZsXBWo21TcV+7NTPmTF885wTZ2bIDfVwP+fi6cBJXO75pReAK3+KwAGNd4ZW17jjrHw7Fuafa9eCTm/Fk9s4MPLtyS8Iduv6YSoTQmFnu/cUu4LxJqjzWfnW+CQ9RlO+5tG6HcX/NzocIvKQoB3BIHzVVMV0INrjU2kTd9wb2kv6v9ui5TC9q/9BHWvswueUdOre/wCyr6Ak6xiRAlZ1j921cI4rd6jMR+DU3sggoyEZXnKvht3iWCuqIGAYMN2je4pmbTVeY/Ae8K7CZLADC4TvHb2H0zzWLZx31a3gfk988DDso546rnHZCB+P4JtV+37bluVMxNYgBcgsJCVycei5BtkxSljqWQNgbWEvRFV4OUlU4z35+QnsW/8kzEo9LUrZF+Y=
+  app: hot-cold-enzyme
+  on:
+    repo: johnvincentio/hot-cold-enzyme
