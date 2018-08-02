@@ -1,6 +1,10 @@
 //
 
 class Utils {
+	static randomInteger(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
 	static handleComment(target, guess) {
 		// console.log(`--- Utils.handleComment; guess ${guess} target ${target}`);
 		if (guess < 1 || guess > 100) {
